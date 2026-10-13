@@ -1,0 +1,145 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    height: 100vh;
+    background: #1E293B;
+    padding: 30px;
+}
+
+.container {
+    height: 100%;
+    min-height: calc(100vh - 60px);
+    background: #0F172A;
+    color: #F8FAFC;
+    border-radius: 4%;
+    padding: 20px;
+}
+
+header {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2563EB;
+    border-radius: 8px;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.5);
+    color: #BAE6FD;
+}
+
+.navbar a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #BAE6FD;
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 100px 5% 0;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 40px;
+    color: #60A5FA;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #BAE6FD;
+}
+
+.inicio-detalle {
+    max-width: 600px;
+}
+
+.inicio-detalle h1 {
+    font-size: 44px;
+    background: #38BDF8;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.inicio-detalle h2 {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.inicio-detalle p {
+    margin: 20px 0;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #CBD5E1;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #2563EB;
+    border: 3px solid #2563EB;
+    border-radius: 40px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: transparent;
+    transform: translateY(-5px);
+    color: #38BDF8;
+}
+
+.perfil {
+    width: clamp(180px, 25vw, 380px);
+    height: clamp(180px, 25vw, 380px);
+}
+
+.perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 7px solid #38BDF8;
+    transition: transform 0.5s ease;
+}
+
+.perfil img:hover {
+    transform: scale(1.1);
+}
